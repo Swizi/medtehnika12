@@ -1,0 +1,474 @@
+*
+{
+	margin: 0;
+  padding: 0;
+}
+
+.a
+{
+	text-decoration: none;
+	color: white;
+}
+
+.header
+{
+	height: 100vh;
+	width: 100%;
+  z-index: 100;
+	background: url(../images/background.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.header_menu_block
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.header_menu_block
+{
+	padding-top: 40px;
+}
+
+.header_menu
+{
+	display: flex;
+  z-index: 10;
+	flex-direction: row;
+  list-style-type: none;
+  padding-top: 110px;
+  margin-right: 90px;
+	font-size: 30px;
+  line-height: 58px;
+  color: #ffffff;
+  font-family: "Century Gothic";
+}
+
+.header_list
+{
+	position: relative;
+	color: #ffffff;
+	padding-left: 100px;
+}
+
+.header_list:after
+{
+	display: block;
+	position: absolute;
+	right: -15px; 
+	width: 0;
+	height: 2px; 
+	background-color: white; 
+	content: "";
+	transition: width 0.3s ease-out; 
+}
+
+.header_list:hover:after,
+.header_list:focus:after
+{
+	width: 70%;
+}
+
+.snake_image
+{
+	padding-left: 70px;
+}
+
+.main_header_block
+{
+	margin-top: 150px;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	flex-direction: column;
+}
+
+.main_header_text
+{
+	width: 100%;
+	font-size: 100px;
+  line-height: 58px;
+  color: #ffffff;
+  font-family: "Century Gothic";
+  font-weight: 400;
+}
+
+.main_header_description
+{
+	font-size: 36px;
+  line-height: 58px;
+  color: #ffffff;
+  font-family: "Century Gothic";
+  margin-top: 65px;
+  font-weight: 100;
+}
+
+.main_block_text
+{
+	width: 80%;
+	font-size: 30px;
+  line-height: 48px;
+  color: #000000;
+  font-family: "Calibri";
+  margin: 0 100px 0 100px;
+}
+
+.main_block_heading
+{
+	width: 100%;
+	padding: 50px 0 50px 0;
+	text-align: center;
+	font-size: 72px;
+  color: #000000;
+  font-family: "Calibri";
+  font-weight: 300;
+}
+
+.main
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer
+{
+	width: 100%;
+	height: 120px;
+	background-color: #3f3f51;
+	color: white;
+	font-size: 20px;
+  line-height: 38px;
+  color: #ffffff;
+  font-family: "Candara";
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+
+.footer_name_block
+{
+	padding-left: 70px;
+	display: flex;
+	flex-direction: column;
+}
+
+.footer_contact_block
+{
+	padding-right: 510px;
+	display: flex;
+	flex-direction: column;
+}
+
+input[type="checkbox"] 
+{
+  display: none;
+}
+
+.mobile_menu_button
+{
+	display: none;
+}
+
+.popup
+{
+  cursor: pointer;
+  position: fixed;
+  top: 240px;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#pop-up
+{
+  display: none;
+}
+
+@media all and (max-width: 1140px)
+{
+  .main_header_text
+  {
+  	font-size: 85px;
+  }
+
+  .main_header_description
+  {
+  	font-size: 26px;
+  }
+
+  .header_menu, .main_block_text
+  {
+  	font-size: 24px;
+  }
+
+  .snake_image
+  {
+  	width: 100px;
+  	height: 156px;
+  }
+
+  .footer_contact_block
+  {
+  	padding-right: 300px;
+  }
+
+  .footer
+  {
+  	line-height: 30px;
+  }
+
+  .main_block_heading
+  {
+  	font-size: 60px;
+  }
+
+  .header
+  {
+	  height: 90vh;
+  }
+}
+
+@media all and (max-width: 1000px)
+{
+
+	.header_menu
+	{
+		padding-top: 80px;
+	}
+  .main_header_text
+  {
+  	font-size: 70px;
+  }
+
+  .main_header_description
+  {
+  	display: none;
+  }
+
+  .header_menu, .main_block_text
+  {
+  	font-size: 20px;
+  }
+
+  .snake_image
+  {
+  	width: 77px;
+  	height: 120px;
+  }
+
+  .footer_contact_block
+  {
+  	padding-right: 150px;
+  }
+
+  .main_block_heading
+  {
+  	font-size: 50px;
+  }
+
+  .header
+  {
+	  height: 75vh;
+  }	
+
+  .footer
+  {
+  	font-size: 16px;
+  }
+
+  .header_list:hover:after,
+  .header_list:focus:after 
+  {
+	  width: 50%;
+  }
+
+  .main_header_block
+  {
+    margin-top: 100px;
+  }
+}
+
+@media all and (max-width: 900px), only screen and (orientation : portrait)
+{
+  .main_header_block
+  {
+  	margin-top: 50px;
+  }
+	.header_menu_block
+	{
+		background-color: #3f3f51;
+	}
+
+	.header
+	{
+		background: none;
+		height: auto;
+	}
+
+	.main_header_text
+	{
+		color: black;
+	}
+
+	.header_menu
+	{
+		padding-top: 0;
+	}
+  
+  .header_menu_block
+  {
+  	height: 200px;
+  	align-items: center;
+  	flex-direction: column;
+  }
+
+  .main_header_description
+  {
+  	display: none;
+  }
+
+  .header_list:after
+  {
+  	top: 45px;
+  }
+}
+
+@media all and (max-width: 700px)
+{
+  .header_menu
+  {
+  	display: none;
+    border-top: 5px solid white;
+  }
+
+  .footer_contact_block
+  {
+  	padding-right: 50px;
+  }
+
+  .mobile_menu_button
+  {
+  	display: block;
+  	color: white;
+    font-family: "Calibri";
+    font-weight: 300;
+    font-size: 50px;
+    padding-bottom: 20px;
+  }
+  
+  .mobile_menu_button
+  {
+	  position: relative;
+	  color: #ffffff;
+  }
+
+  .mobile_menu_button:after
+  {
+	  display: block;
+	  position: absolute;
+	  right: -5px; 
+	  top: 55px;
+	  width: 0;
+	  height: 2px; 
+	  background-color: white; 
+	  content: "";
+	  transition: width 0.3s ease-out; 
+  } 
+
+  .mobile_menu_button:hover:after,
+  .mobile_menu_button:focus:after
+  {
+	  width: 110%;
+  }
+  
+  .mobile_menu_button:hover
+  {
+  	cursor: pointer;
+  }
+
+  .snake_image
+  {
+  	padding-left: 0;
+  }
+
+  #checkbox:checked ~ .header_menu
+  {
+    display: block;
+    background-color: #3f3f51;
+    width: 100%;
+    margin: 0;
+    height: 100%;
+  }
+
+  #checkbox:checked ~ .header_menu_block
+  {
+    position: fixed;
+  }
+
+  #checkbox:checked ~ .body
+  {
+    overflow: hidden;
+  }
+
+  #checkbox:checked ~ .popup
+  {
+    display: flex;
+  }
+
+  .header_list:after
+  {
+  	top: 30px;
+  	right: 0;
+  }
+  
+  .header_list:hover:after,
+  .header_list:focus:after
+  {
+	  width: 40%;
+  }
+}
+
+@media all and (max-width: 570px)
+{
+	.main_header_text
+	{
+		font-size: 55px;
+	}
+
+	.main_block_heading
+	{
+		font-size: 45px;
+	}
+
+	.footer_name_block, .footer_contact_block
+	{
+		padding: 0;
+	}
+
+	.footer
+	{
+		flex-direction: column;
+	}
+
+	.to_edit
+	{
+		display: none;
+	}
+}
+
+@media all and (max-width: 450px)
+{
+	.main_header_text
+	{
+		font-size: 45px;
+	}
+}

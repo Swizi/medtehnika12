@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Медтехника 12</title>
+    <link rel="shortcut icon" href="../../images/favicon.png" type="image/png">
+    <!-- jQuery library (served from Google) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <!-- bxSlider Javascript file -->
+    <script src="../../jquery.bxslider.min.js"></script>
+    <!-- bxSlider CSS file -->
+    <link href="../../style/jquery.bxslider.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../../style/style_shop_items.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <header class="header">
+      <div class="header_menu_block">
+        <div class="shop_icon_block">
+          <img src="../../images/snake.png" alt="snake with cup" class="snake_image">
+          <h2 class="main_header_text">
+            Медицинская техника
+          </h2>
+        </div>
+        <input type="checkbox" id="checkbox" onclick="checkAddress(this)">
+        <label class="mobile_menu_button" for="checkbox">Меню</label>
+        <div class="popup" id="pop-up"></div>
+        <ul class="header_menu ul">
+          <li class="header_list li"><a href="../../index.html" class="a">Главная</a></li>
+          <li class="header_list li"><a href="../../shop.html" class="a">Товары</a></li>
+          <li class="header_list li"><a href="../../contacts.html" class="a">Контакты</a></li>
+        </ul>
+      </div>
+    </header>
+    <main class="main">
+      <h4 class="main_block_heading hidden_text">Термометр с поверкой ТТЖ-Х (для холодильника) в картонном тубусе</h4>
+      <ul class="bxslider">
+        <li><img src="../images/thermometer_ttzh-h_in_case.jpg" /></li>
+      </ul>
+      <div class="item_description_block">
+        <h4 class="main_block_heading">Термометр с поверкой ТТЖ-Х (для холодильника) в картонном тубусе</h4>
+        <p class="main_block_text"> 
+          Термометр для холодильника с поверкой ТТЖ-Х (-30...+40°C)<br><br>
+          Термометр стеклянный жидкостный ТТЖ-Х для холодильника выполнен в виде стеклянной капиллярной трубки с резервуаром, заполненным термометрической жидкостью, который находится в пластмассовом корпусе с удобным крючком для подвешивания.<br><br>
+
+          Каждый термометр упакован в индивидуальный картонный тубус, заводская упаковка 200 шт.<br><br>
+          Диапазон измерения температуры от -30°С до +40°С с ценой деления шкалы 1°С.<br><br>
+          Термометрическая жидкость: спирт этиловый марки А по ГОСТ 17229.<br><br>
+          Термометры для холодильных камер ТТЖ-Х в обязательном порядке подлежат поверке на соответствие во время выпуска термометра из производства. После поверки на паспорт ставится клеймо, по которому изготовитель гарантирует соответствие термометра требованиям технических условий в течении 3-х лет (межповерочный интервал). <br><br>Все термометры имеются сертификаты и допущены к применению в Российской Федерации. В комплектацию входит паспорт завода и инструкция пользователя и свидетельство.<br><br>
+
+          Страна происхождения: Россия.<br><br>
+        </p>
+        <div class="price_block">
+          <p class="main_block_price">Цена по запросу</p>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer_name_block">
+        <p>© 2019 ООО Эталон-Мед</p>
+        <p class="to_edit">Торгово-сервисная компания</p>
+      </div>
+      <div class="footer_contact_block">
+        <p>Йошкар-Ола, Якова Эшпая 113 а</p>
+        <p>8(8362)380318</p>
+      </div>
+    </footer>
+    <script src="../../scripts/script.js"></script>
+    <script>
+$(document).ready(function(){
+  $('.bxslider').bxSlider();
+});
+</script>
+  </body>
+</html>

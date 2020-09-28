@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Медтехника 12</title>
+    <link rel="stylesheet" href="../style/style_shop_list.css"/>
+    <link rel="shortcut icon" href="../images/favicon.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <header class="header">
+      <div class="header_menu_block">
+        <div class="shop_icon_block">
+          <img src="../images/snake.png" alt="snake with cup" class="snake_image">
+          <h2 class="main_header_text">
+            Медицинская техника
+          </h2>
+        </div>
+        <input type="checkbox" id="checkbox" onclick="checkAddress(this)">
+        <label class="mobile_menu_button" for="checkbox">Меню</label>
+        <div class="popup" id="pop-up"></div>
+        <ul class="header_menu ul">
+          <li class="header_list li"><a href="../index.html" class="a">Главная</a></li>
+          <li class="header_list li"><a href="../shop.html" class="a">Товары</a></li>
+          <li class="header_list li"><a href="../contacts.html" class="a">Контакты</a></li>
+        </ul>
+      </div>
+    </header>
+    <main class="main">
+      <h4 class="main_block_heading">Термометры</h4>
+      <form class="sort_block">
+        <input name="sort" type="radio" id="sort-asc"><label for="sort-asc" class="main_block_text" checked>По возрастанию цены</label>
+        <input name="sort" type="radio" id="sort-desc"><label for="sort-desc" class="main_block_text">По убыванию цены</label>
+      </form>
+      <div class="item_list">
+        <div class="item_block" data-price="350">
+          <a href="items/termometer_eco_temp_basic.html" class="a_black">
+            <img src="images/Termometr_omron_Eco_temp_basic_small.jpg" alt="adapter" width="150" height="87.5" class="item_image">
+            <hr width="150" color="black" size="1">
+            <p class="main_block_text"> 
+              Термометр OMRON Eco Temp Basic (MC-246-RU)
+              <br><br>
+              Цена по запросу
+            </p>
+          </a>
+        </div>
+        <div class="item_block" data-price="250">
+          <a href="items/termometer_refrigerator.html" class="a_black">
+            <img src="images/termo299big.jpg" alt="adapter" width="150" height="87.5" class="item_image">
+            <hr width="150" color="black" size="1">
+            <p class="main_block_text"> 
+              Термометр бытовой для холодильника (в белом корпусе)
+              <br><br>
+              Цена по запросу
+            </p>
+          </a>
+        </div>
+        <div class="item_block" data-price="250">
+          <a href="items/termometer_facade_tbn3_m2.html" class="a_black">
+            <img src="images/termometr_bitovoy_tbn3_m2.png" alt="adapter" width="150" height="87.5" class="item_image">
+            <hr width="150" color="black" size="1">
+            <p class="main_block_text"> 
+              Термометр бытовой наружный ТБН-3 М2 большой
+              <br><br>
+              Цена по запросу
+            </p>
+          </a>
+        </div>
+        <div class="item_block" data-price="350">
+          <a href="items/termometer_household_tb3_m1.html" class="a_black">
+            <img src="images/termometr_for_food_production.jpg" alt="adapter" width="150" height="87.5" class="item_image">
+            <hr width="150" color="black" size="1">
+            <p class="main_block_text"> 
+              Термометр бытовой ТБ-3-М1 для пищевых продуктов
+              <br><br>
+              Цена по запросу
+            </p>
+          </a>
+        </div>
+        <div class="item_block" data-price="350">
+          <a href="items/termometer_household_tb3_m1_outer.html" class="a_black">
+            <img src="images/termometr_household_tb3-m1-normal.jpg" alt="adapter" width="150" height="87.5" class="item_image">
+            <hr width="150" color="black" size="1">
+            <p class="main_block_text"> 
+              Термометр бытовой ТБ-3-М1 наружный средний
+              <br><br>
+              Цена по запросу
+            </p>
+          </a>
+        </div>
+        <div class="item_block" data-price="130">
+          <a href="items/termometer_penguin.html" class="a_black">
+            <img src="images/thermometer_penguin.jfif" alt="adapter" width="150" height="87.5" class="item_image">
+            <hr width="150" color="black" size="1">
+            <p class="main_block_text"> 
+              Термометр для холодильника ТБ-3-М1 "Пингвин"
+              <br><br>
+              Цена по запросу
+            </p>
+          </a>
+        </div>
+        <div class="item_block" data-price="150">
+          <a href="items/termometer_room_medium.html" class="a_black">
+            <img src="images/thermometer_normal.jpg" alt="adapter" width="150" height="87.5" class="item_image">
+            <hr width="150" color="black" size="1">
+            <p class="main_block_text"> 
+              Термометр комнатный средний
+              <br><br>
+              Цена по запросу
+            </p>
+          </a>
+        </div>
+        <div class="item_block" data-price="1600">
+          <a href="items/termometer_infrared_child.html" class="a_black">
+            <img src="images/Infrared_termometr_B.Well_WF_2000.jpg" alt="adapter" width="150" height="87.5" class="item_image">
+            <hr width="150" color="black" size="1">
+            <p class="main_block_text"> 
+              Термометр лобный инфракрасный WF-2000 для детей
+              <br><br>
+              Цена по запросу
+            </p>
+          </a>
+        </div>
+        <div class="item_block" data-price="80">
+          <a href="items/thermometer_medicine_in_case.html" class="a_black">
+            <img src="images/thermometer_medicine_in_case.jfif" alt="adapter" width="150" height="87.5" class="item_image">
+            <hr width="150" color="black" size="1">
+            <p class="main_block_text"> 
+              Термометр медицинский ртутный в футляре
+              <br><br>
+              Цена по запросу
+            </p>
+          </a>
+        </div>
+        <div class="item_block" data-price="250">
+          <a href="items/thermometer_refrigerator_verification.html" class="a_black">
+            <img src="images/thermometer_ttzh-h_in_case.jpg" alt="adapter" width="150" height="87.5" class="item_image">
+            <hr width="150" color="black" size="1">
+            <p class="main_block_text"> 
+              Термометр с поверкой ТТЖ-Х (для холодильника) в картонном тубусе
+              <br><br>
+              Цена по запросу
+            </p>
+          </a>
+        </div>
+        <div class="item_block" data-price="200">
+          <a href="items/thermometer_ts-7_m1.html" class="a_black">
+            <img src="images/thermometer_ts-7_m1.jpg" alt="adapter" width="150" height="87.5" class="item_image">
+            <hr width="150" color="black" size="1">
+            <p class="main_block_text"> 
+              Термометр ТС-7 М1 исп.4
+              <br><br>
+              Цена по запросу
+            </p>
+          </a>
+        </div>
+        <div class="item_block" data-price="500">
+          <a href="items/thermometer_num_wt-1.html" class="a_black">
+            <img src="images/thermometer_num_wt-1.jpg" alt="adapter" width="150" height="87.5" class="item_image">
+            <hr width="150" color="black" size="1">
+            <p class="main_block_text"> 
+              Термометр цифровой игольчатый WT-1 для продуктов
+              <br><br>
+              Цена по запросу
+            </p>
+          </a>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer_name_block">
+        <p>© 2019 ООО Эталон-Мед</p>
+        <p class="to_edit">Торгово-сервисная компания</p>
+      </div>
+      <div class="footer_contact_block">
+        <p>Йошкар-Ола, Якова Эшпая 113 а</p>
+        <p>8(8362)380318</p>
+      </div>
+    </footer>
+    <script src="../scripts/script.js"></script>
+  </body>
+</html>

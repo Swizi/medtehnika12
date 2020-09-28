@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Медтехника 12</title>
+    <link rel="stylesheet" href="../style/style_shop_list.css"/>
+    <link rel="shortcut icon" href="../images/favicon.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <header class="header">
+      <div class="header_menu_block">
+        <div class="shop_icon_block">
+          <img src="../images/snake.png" alt="snake with cup" class="snake_image">
+          <h2 class="main_header_text">
+            Медицинская техника
+          </h2>
+        </div>
+        <input type="checkbox" id="checkbox" onclick="checkAddress(this)">
+        <label class="mobile_menu_button" for="checkbox">Меню</label>
+        <div class="popup" id="pop-up"></div>
+        <ul class="header_menu ul">
+          <li class="header_list li"><a href="../index.html" class="a">Главная</a></li>
+          <li class="header_list li"><a href="../shop.html" class="a">Товары</a></li>
+          <li class="header_list li"><a href="../contacts.html" class="a">Контакты</a></li>
+        </ul>
+      </div>
+    </header>
+    <main class="main">
+      <h4 class="main_block_heading">Тонометры и комплектующие</h4>
+      <form class="sort_block">
+        <input name="sort" type="radio" id="sort-asc"><label for="sort-asc" class="main_block_text" checked>По возрастанию цены</label>
+        <input name="sort" type="radio" id="sort-desc"><label for="sort-desc" class="main_block_text">По убыванию цены</label>
+      </form>
+      <div class="item_list">
+        <div class="item_block" data-price="600">
+          <a href="items/adapter_b_well_ad_155.html" class="a_black">
+            <img src="images/Adapter_B.Well_AD_155.jpg" alt="adapter" width="150" height="87.5" class="item_image">
+            <hr width="150" color="black" size="1">
+            <p class="main_block_text"> 
+              Адаптер для тонометра АД-155 B Well
+              <br><br>
+              Цена по запросу
+            </p>
+          </a>
+        </div>
+        <div class="item_block" data-price="750">
+          <a href="items/adapter_and_tb_233c.html" class="a_black">
+            <img src="images/adapter_and_tb_233c.jpg" alt="adapter" width="150" height="87.5" class="item_image">
+            <hr width="150" color="black" size="1">
+            <p class="main_block_text"> 
+              Адаптер сетевой для тонометров A&D
+              <br><br>
+              Цена по запросу
+            </p>
+          </a>
+        </div>
+        <div class="item_block" data-price="650">
+          <a href="items/adapter_microlife.html" class="a_black">
+            <img src="images/adapter_microlife_ad_1024c_small.jpg" alt="adapter" width="150" height="87.5" class="item_image">
+            <hr width="150" color="black" size="1">
+            <p class="main_block_text"> 
+              Адаптер сетевой для тонометров Микролайф
+              <br><br>
+              Цена по запросу
+            </p>
+          </a>
+        </div>
+        <div class="item_block" data-price="200">
+          <a href="items/grusha_rezinovaya_dlya_ua.html" class="a_black">
+            <img src="images/grusha-rezinovaya-dlya-ua.jpg" alt="adapter" width="150" height="87.5" class="item_image">
+            <hr width="150" color="black" size="1">
+            <p class="main_block_text"> 
+              Баллон серый к тонометру (с обратным клапаном)
+              <br><br>
+              Цена по запросу
+            </p>
+          </a>
+        </div>
+        <div class="item_block" data-price="3000">
+          <a href="items/avtomaticheskiy_tonometr_na_plecho_AND_UA_1100.html" class="a_black">
+            <img src="images/Avtomaticheskiy_tonometr_na_plecho_AND_UA_1200_small.jpg" alt="adapter" width="150" height="87.5" class="item_image">
+            <hr width="150" color="black" size="1">
+            <p class="main_block_text"> 
+              Измеритель артериалного давления A&D UA-1100 с адаптером
+              <br><br>
+              Цена по запросу(Под заказ)
+            </p>
+          </a>
+        </div>
+        <div class="item_block" data-price="1400">
+          <a href="items/tonometer_and_ua_604.html" class="a_black">
+            <img src="images/Avtomaticheskiy_tonometr_na_plecho_AND_UA_888E_.jpg" alt="adapter" width="150" height="87.5" class="item_image">
+            <hr width="150" color="black" size="1">
+            <p class="main_block_text"> 
+              Измеритель артериального давления AND UA-604 полуавтомат
+              <br><br>
+              Цена по запросу
+            </p>
+          </a>
+        </div>
+        <div class="item_block" data-price="4000">
+          <a href="items/tonometer_and_ua_1300.html" class="a_black">
+            <img src="images/Avtomaticheskiy_tonometr_na_plecho_AND_UA_1300.jpg" alt="adapter" width="150" height="87.5" class="item_image">
+            <hr width="150" color="black" size="1">
+            <p class="main_block_text"> 
+              Измеритель артериального давления A&D UA-1300 говорящий с адаптером
+              <br><br>
+              Цена по запросу
+            </p>
+          </a>
+        </div>
+        <div class="item_block" data-price="2700">
+          <a href="items/tonometer_and_ua_777.html" class="a_black">
+            <img src="images/avtomaticheskiy_tonometr_na_plecho_and_ua_777_small.jpg" alt="adapter" width="150" height="87.5" class="item_image">
+            <hr width="150" color="black" size="1">
+            <p class="main_block_text"> 
+              Измеритель артериального давления A&D UA-777 с адаптером
+              <br><br>
+              Цена по запросу
+            </p>
+          </a>
+        </div>
+        <div class="item_block" data-price="2600">
+          <a href="items/tonometer_microlife_bp_a100.html" class="a_black">
+            <img src="images/avtomaticheskiy_tonometr_microlife_bp_a100_plus_small.jpg" alt="adapter" width="150" height="87.5" class="item_image">
+            <hr width="150" color="black" size="1">
+            <p class="main_block_text"> 
+              Измеритель артериального давления BP A100 c адаптером
+              <br><br>
+              Цена по запросу
+            </p>
+          </a>
+        </div>
+        <div class="item_block" data-price="3100">
+          <a href="items/tonometer_microlife_bp_a150.html" class="a_black">
+            <img src="images/Avtomaticheskiy_tonometr_Microlife_BP_A6_PC_small.png" alt="adapter" width="150" height="87.5" class="item_image">
+            <hr width="150" color="black" size="1">
+            <p class="main_block_text"> 
+              Измеритель артериального давления BP A150 c адаптером
+              <br><br>
+              Цена по запросу(Под заказ)
+            </p>
+          </a>
+        </div>
+        <div class="item_block" data-price="1500">
+          <a href="items/tonometer_microlife_bp_num1_basic.html" class="a_black">
+            <img src="images/Tonometr_na_plecho_Omron_M2_Basic_HEM_7121_ARU_small.jpg" alt="adapter" width="150" height="87.5" class="item_image">
+            <hr width="150" color="black" size="1">
+            <p class="main_block_text"> 
+              Измеритель артериального давления BP №1 Basic полуавтомат
+              <br><br>
+              Цена по запросу
+            </p>
+          </a>
+        </div>
+        <div class="item_block" data-price="850">
+          <a href="items/tonometer_mechanical_wm-63s.html" class="a_black">
+            <img src="images/Mehanicheskiy_tonometr_B.Well_WM_63S.jpg" alt="adapter" width="150" height="87.5" class="item_image">
+            <hr width="150" color="black" size="1">
+            <p class="main_block_text"> 
+              Измеритель артериального давления WM-63S B Well (встроенный стетоскоп)
+              <br><br>
+              Цена по запросу
+            </p>
+          </a>
+        </div>
+        <div class="item_block" data-price="850">
+          <a href="items/tonometer_mechanical_wm-62s.html" class="a_black">
+            <img src="images/Mehanicheskiy_tonometr_B.Well_WM_62S.jpg" alt="adapter" width="150" height="87.5" class="item_image">
+            <hr width="150" color="black" size="1">
+            <p class="main_block_text"> 
+              Измеритель артериального давления механический WM-62S B Well
+              <br><br>
+              Цена по запросу
+            </p>
+          </a>
+        </div>
+        <div class="item_block" data-price="1300">
+          <a href="items/tonometer_trives.html" class="a_black">
+            <img src="images/mexanicheskij-tonometr-detskij-trives-komplektaciya.jpg" alt="adapter" width="150" height="87.5" class="item_image">
+            <hr width="150" color="black" size="1">
+            <p class="main_block_text"> 
+              Измеритель артериального давления механический ТРИВЕС ДЕТСКИЙ (Комплектация 7)
+              <br><br>
+              Цена по запросу
+            </p>
+          </a>
+        </div>
+        <div class="item_block" data-price="1800">
+          <a href="items/tonometer_omron_wrist.html" class="a_black">
+            <img src="images/Tonometr_na_zapyast_e_Omron_R2_HEM_6113.jpg" alt="adapter" width="150" height="87.5" class="item_image">
+            <hr width="150" color="black" size="1">
+            <p class="main_block_text"> 
+              Измеритель артериального давления OMRON запястный
+              <br><br>
+              Цена по запросу
+            </p>
+          </a>
+        </div>
+        <div class="item_block" data-price="850">
+          <a href="items/tonometer_b_well_med-63.html" class="a_black">
+            <img src="images/MED-63_1_bwell_med-63__bi_vell_med-63_-_mekhanicheskiy_tonometr_s_manzhetoy_s_koltsom_s_vstroennym_stetoskopom.jpg" alt="adapter" width="150" height="87.5" class="item_image">
+            <hr width="150" color="black" size="1">
+            <p class="main_block_text"> 
+              Измеритель артериального давления MED-63 B Well (встроенный стетоскоп)
+              <br><br>
+              Цена по запросу
+            </p>
+          </a>
+        </div>
+        <div class="item_block" data-price="1000">
+          <a href="items/big_cuff_and.html" class="a_black">
+            <img src="images/manzheta_and_bolshaya.jpg" alt="adapter" width="150" height="87.5" class="item_image">
+            <hr width="150" color="black" size="1">
+            <p class="main_block_text"> 
+              Манжета A&D большая в коробке
+              <br><br>
+              Цена по запросу
+            </p>
+          </a>
+        </div>
+        <div class="item_block" data-price="750">
+          <a href="items/small_cuff_18-22cm.html" class="a_black">
+            <img src="images/manzheta-malaya-18-22sm.jpg" alt="adapter" width="150" height="87.5" class="item_image">
+            <hr width="150" color="black" size="1">
+            <p class="main_block_text"> 
+              Манжета A&D малая в коробке
+              <br><br>
+              Цена по запросу
+            </p>
+          </a>
+        </div>
+        <div class="item_block" data-price="600">
+          <a href="items/standard_cuff_and.html" class="a_black">
+            <img src="images/Manzheta_standartnaya_dlya_tonometra_AND_UA_100.jpg" alt="adapter" width="150" height="87.5" class="item_image">
+            <hr width="150" color="black" size="1">
+            <p class="main_block_text"> 
+              Манжета A&D стандартная c пластиковым кольцом
+              <br><br>
+              Цена по запросу
+            </p>
+          </a>
+        </div>
+        <div class="item_block" data-price="0">
+          <a href="items/standard_cuff_and_ua_1200_1300.html" class="a_black">
+            <img src="images/Manzheta_standartnaya_dlya_tonometra_AND_UA_100.jpg" alt="adapter" width="150" height="87.5" class="item_image">
+            <hr width="150" color="black" size="1">
+            <p class="main_block_text"> 
+              Манжета A&D стандартная каркасная для UA-1200/1300
+              <br><br>
+              Цена по запросу(Нет в наличии)
+            </p>
+          </a>
+        </div>
+        <div class="item_block" data-price="750">
+          <a href="items/standard_cuff_and_size_m.html" class="a_black">
+            <img src="images/manzhetka.jpg" alt="adapter" width="150" height="87.5" class="item_image">
+            <hr width="150" color="black" size="1">
+            <p class="main_block_text"> 
+              Манжета A&D стандартная, размер М (коробка)
+              <br><br>
+              Цена по запросу
+            </p>
+          </a>
+        </div>
+        <div class="item_block" data-price="350">
+          <a href="items/cuff_cs_medica_type_d.html" class="a_black">
+            <img src="images/Manzheta_CS_Medica_2_Child_size_D.jfif" alt="adapter" width="150" height="87.5" class="item_image">
+            <hr width="150" color="black" size="1">
+            <p class="main_block_text"> 
+              Манжета CS Medica тип D (13-22см)
+              <br><br>
+              Цена по запросу
+            </p>
+          </a>
+        </div>
+        <div class="item_block" data-price="400">
+          <a href="items/cuff_cs_medica_type_s.html" class="a_black">
+            <img src="images/manzheta_cs_medica_type_s.jfif" alt="adapter" width="150" height="87.5" class="item_image">
+            <hr width="150" color="black" size="1">
+            <p class="main_block_text"> 
+              Манжета CS Medica тип S (24-42см)
+              <br><br>
+              Цена по запросу
+            </p>
+          </a>
+        </div>
+        <div class="item_block" data-price="350">
+          <a href="items/cuff_cs_medica_type_h.html" class="a_black">
+            <img src="images/Manzheta_CS_Medica_1_Baby_size_H.jfif" alt="adapter" width="150" height="87.5" class="item_image">
+            <hr width="150" color="black" size="1">
+            <p class="main_block_text"> 
+              Манжета CS Medica тип Н (9-14см)
+              <br><br>
+              Цена по запросу
+            </p>
+          </a>
+        </div>
+        <div class="item_block" data-price="950">
+          <a href="items/cuff_microlife_size_s.html" class="a_black">
+            <img src="images/manzheta-microlise_wrs-s.jpg" alt="adapter" width="150" height="87.5" class="item_image">
+            <hr width="150" color="black" size="1">
+            <p class="main_block_text"> 
+              Манжета Microlife размер S (17-22)
+              <br><br>
+              Цена по запросу
+            </p>
+          </a>
+        </div>
+        <div class="item_block" data-price="1000">
+          <a href="items/cuff_microlife_size_l-xl.html" class="a_black">
+            <img src="images/manzheta_uvellichennaya_32-52cm.jpg" alt="adapter" width="150" height="87.5" class="item_image">
+            <hr width="150" color="black" size="1">
+            <p class="main_block_text"> 
+              Манжета Microlife увеличенная 32-42см
+              <br><br>
+              Цена по запросу
+            </p>
+          </a>
+        </div>
+        <div class="item_block" data-price="750">
+          <a href="items/cuff_microlife_size_m-l.html" class="a_black">
+            <img src="images/manzheta_universal_microlise_22-42cm.jpg" alt="adapter" width="150" height="87.5" class="item_image">
+            <hr width="150" color="black" size="1">
+            <p class="main_block_text"> 
+              Манжета Microlife. размер M-L 22-42см
+              <br><br>
+              Цена по запросу
+            </p>
+          </a>
+        </div>
+        <div class="item_block" data-price="850">
+          <a href="items/cuff_microlife_size_m-l_rigid.html" class="a_black">
+            <img src="images/manjeta_na_plecho_microlife_wrs_razmer_m_2232_sm_standartnaya.jpg" alt="adapter" width="150" height="87.5" class="item_image">
+            <hr width="150" color="black" size="1">
+            <p class="main_block_text"> 
+              Манжета Microlife. размер M-L с жестким каркасом
+              <br><br>
+              Цена по запросу
+            </p>
+          </a>
+        </div>
+        <div class="item_block" data-price="750">
+          <a href="items/cuff_b_well_anatomical_22-32cm.html" class="a_black">
+            <img src="images/manzheta_wa-c-m-M-22-32.jpg" alt="adapter" width="150" height="87.5" class="item_image">
+            <hr width="150" color="black" size="1">
+            <p class="main_block_text"> 
+              Манжета анатомическая B Well 22-32см
+              <br><br>
+              Цена по запросу
+            </p>
+          </a>
+        </div>
+        <div class="item_block" data-price="800">
+          <a href="items/cuff_b_well_anatomical_22-42cm.html" class="a_black">
+            <img src="images/WA-C-M_manzheta_22-42cm.jpg" alt="adapter" width="150" height="87.5" class="item_image">
+            <hr width="150" color="black" size="1">
+            <p class="main_block_text"> 
+              Манжета анатомическая B Well размер M-L (22-42)
+              <br><br>
+              Цена по запросу
+            </p>
+          </a>
+        </div>
+        <div class="item_block" data-price="600">
+          <a href="items/cuff_and_ub-202.html" class="a_black">
+            <img src="images/manzheta_and_ub_202.png" alt="adapter" width="150" height="87.5" class="item_image">
+            <hr width="150" color="black" size="1">
+            <p class="main_block_text"> 
+              Манжета для UB-202 AND (запястные)
+              <br><br>
+              Цена по запросу
+            </p>
+          </a>
+        </div>
+        <div class="item_block" data-price="600">
+          <a href="items/cuff_and_ub-402_403_201.html" class="a_black">
+            <img src="images/manzheta_and_zapyast'e-UB-402-403-201.jpg" alt="adapter" width="150" height="87.5" class="item_image">
+            <hr width="150" color="black" size="1">
+            <p class="main_block_text"> 
+              Манжета для UB-402/403/201 AND (запястные)
+              <br><br>
+              Цена по запросу
+            </p>
+          </a>
+        </div>
+        <div class="item_block" data-price="500">
+          <a href="items/cuff_import_standard.html" class="a_black">
+            <img src="images/manzheta-import-seraya-standart-kamera-pvh-1-s-kolcom.jpg" alt="adapter" width="150" height="87.5" class="item_image">
+            <hr width="150" color="black" size="1">
+            <p class="main_block_text"> 
+              Манжета импорт (серая) стандарт (камера ПВХ 1-тр. с кольцом)
+              <br><br>
+              Цена по запросу
+            </p>
+          </a>
+        </div>
+        <div class="item_block" data-price="500">
+          <a href="items/cuff_import_increased.html" class="a_black">
+            <img src="images/manzheta-import-seraya-uvelichennaya-kamera-pvh-1-tr.-s-kolcom.jpg" alt="adapter" width="150" height="87.5" class="item_image">
+            <hr width="150" color="black" size="1">
+            <p class="main_block_text"> 
+              Манжета импорт (серая) увеличенная (камера ПВХ 1-тр. с кольцом)
+              <br><br>
+              Цена по запросу
+            </p>
+          </a>
+        </div>
+        <div class="item_block" data-price="500">
+          <a href="items/cuff_import_universal.html" class="a_black">
+            <img src="images/1180881236_w640_h640_manzheta-uluchshennaya-dlya.jpg" alt="adapter" width="150" height="87.5" class="item_image">
+            <hr width="150" color="black" size="1">
+            <p class="main_block_text"> 
+              Манжета импорт (серая) универсальная 22-36 см (камера ПВХ 1-тр. с кольцом)
+              <br><br>
+              Цена по запросу
+            </p>
+          </a>
+        </div>
+        <div class="item_block" data-price="0">
+          <a href="cuff_wrist_and.html" class="a_black">
+            <img src="images/manzheta_zapyast'e_and.jpg" alt="adapter" width="150" height="87.5" class="item_image">
+            <hr width="150" color="black" size="1">
+            <p class="main_block_text"> 
+              Манжета к запястному тономеру AND
+              <br><br>
+              Цена по запросу(Нет в наличии)
+            </p>
+          </a>
+        </div>
+        <div class="item_block" data-price="700">
+          <a href="items/cuff_frame_universal.html" class="a_black">
+            <img src="images/manzheta_universal_omron_comfort.jfif" alt="adapter" width="150" height="87.5" class="item_image">
+            <hr width="150" color="black" size="1">
+            <p class="main_block_text"> 
+              Манжета каркасная универсальная 
+              <br><br>
+              Цена по запросу
+            </p>
+          </a>
+        </div>
+        <div class="item_block" data-price="400">
+          <a href="items/cuff_nylon_standard_1.html" class="a_black">
+            <img src="images/manzheta_neylon_blue_standard.jpeg" alt="adapter" width="150" height="87.5" class="item_image">
+            <hr width="150" color="black" size="1">
+            <p class="main_block_text"> 
+              Манжета нейлон (синяя) стандарт (камера латекс- 1тр. с кольцом)
+              <br><br>
+              Цена по запросу
+            </p>
+          </a>
+        </div>
+        <div class="item_block" data-price="400">
+          <a href="items/cuff_nylon_standard_2.html" class="a_black">
+            <img src="images/manzheta_standart21.jpg" alt="adapter" width="150" height="87.5" class="item_image">
+            <hr width="150" color="black" size="1">
+            <p class="main_block_text"> 
+              Манжета нейлон (синяя) стандарт (камера латекс- 2тр. с кольцом)
+              <br><br>
+              Цена по запросу
+            </p>
+          </a>
+        </div>
+        <div class="item_block" data-price="750">
+          <a href="items/cuff_omron_standard.html" class="a_black">
+            <img src="images/Standartnaya_manzheta_CM_Medium_Cuff.jfif" alt="adapter" width="150" height="87.5" class="item_image">
+            <hr width="150" color="black" size="1">
+            <p class="main_block_text"> 
+              Манжета стандартная OMRON
+              <br><br>
+              Цена по запросу
+            </p>
+          </a>
+        </div>
+        <div class="item_block" data-price="1000">
+          <a href="items/cuff_omron_universal.html" class="a_black">
+            <img src="images/Universal_naya_manzheta_CW_Wide_Range_Cuff_HEM_RML30.jfif" alt="adapter" width="150" height="87.5" class="item_image">
+            <hr width="150" color="black" size="1">
+            <p class="main_block_text"> 
+              Манжета универсальная OMRON 22-42см.
+              <br><br>
+              Цена по запросу
+            </p>
+          </a>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer_name_block">
+        <p>© 2019 ООО Эталон-Мед</p>
+        <p class="to_edit">Торгово-сервисная компания</p>
+      </div>
+      <div class="footer_contact_block">
+        <p>Йошкар-Ола, Якова Эшпая 113 а</p>
+        <p>8(8362)380318</p>
+      </div>
+    </footer>
+    <script src="../scripts/script.js"></script>
+  </body>
+</html>

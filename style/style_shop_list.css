@@ -1,0 +1,747 @@
+/*
+    Tripoli is a generic CSS standard for HTML rendering. 
+    Copyright (C) 2007  David Hellsing
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
+* { margin: 0; padding: 0; text-decoration: none; font-size: 1em; outline: none; }
+code, kbd, samp, pre, tt, var, textarea, input, select, isindex, listing, xmp, plaintext { font: inherit; font-size: 1em; white-space: normal; }
+dfn, i, cite, var, address, em { font-style: normal; }
+th, b, strong, h1, h2, h3, h4, h5, h6 { font-weight: normal; }
+a, img, a img, iframe, form, fieldset, abbr, acronym, object, applet, table { border: none; }
+table { border-collapse: collapse; border-spacing: 0; }
+caption, th, td, center { text-align: left; vertical-align: top; }
+body { line-height: 1; background: white; color: black; }
+q { quotes: "" ""; }
+ul, ol, dir, menu { list-style: none; }
+sub, sup { vertical-align: baseline; }
+a { color: inherit; }
+font { color: inherit !important; font: inherit !important; color: inherit !important; } /* disables some nasty font attributes in standard browsers */
+marquee { overflow: inherit !important; -moz-binding: none; }
+blink { text-decoration: none; }
+nobr { white-space: normal; }
+
+p{
+  width: inherit;
+}
+
+/*
+
+CHANGELOG
+
+23/8-07
+
+Added deprecated tags <listing>, <xmp> and <plaintext> in the code block
+
+Resorted to normal white-space in all code tags
+
+Disabled the deprecated <marquee>, <blink> and <nobr> tag in some browsers
+
+*/
+
+.ul, .ol
+{
+  list-style: none;
+}
+
+.a
+{
+	text-decoration: none;
+	color: white;
+}
+
+
+
+.a_black
+{
+  text-decoration: none;
+  color: black;
+}
+
+.header
+{
+	height: 70vh;
+	width: 100%;
+	background: url(../images/background2.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.header_menu_block
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.header_menu_block
+{
+	padding-top: 40px;
+}
+
+.header_menu
+{
+	display: flex;
+  z-index: 10;
+	flex-direction: row;
+  margin-right: 90px;
+  justify-content: flex-end;
+  list-style-type: none;
+	font-size: 30px;
+  line-height: 58px;
+  color: #ffffff;
+  font-family: "Century Gothic";
+}
+
+.header_list
+{
+	position: relative;
+	color: #ffffff;
+	padding-left: 100px;
+}
+
+.header_list:after
+{
+	display: block;
+	position: absolute;
+	right: -15px; 
+	width: 0;
+	height: 2px; 
+	background-color: white; 
+	content: "";
+	transition: width 0.3s ease-out; 
+}
+
+.header_list:hover:after,
+.header_list:focus:after
+{
+	width: 70%;
+}
+
+.snake_image
+{
+	padding-left: 70px;
+}
+
+.main_header_block
+{
+	margin-top: 150px;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	flex-direction: column;
+}
+
+.main_header_text
+{
+
+	width: 100%;
+	font-size: 62px;
+  line-height: 58px;
+  color: #ffffff;
+  font-family: "Century Gothic";
+  font-weight: 400;
+}
+
+.main_header_description
+{
+	font-size: 36px;
+  line-height: 58px;
+  color: #ffffff;
+  font-family: "Century Gothic";
+  margin-top: 65px;
+  font-weight: 100;
+}
+
+.main_block_text
+{
+  text-align: center;
+	width: 150px;
+	font-size: 20px;
+  color: #000000;
+  font-family: "Calibri";
+  margin-top: 20px;
+}
+
+.main_block_heading
+{
+	text-align: left;
+	font-size: 72px;
+  color: #000000;
+  font-family: "Calibri";
+  font-weight: 300;
+}
+
+.main
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: start;
+  padding: 50px 0 50px 75px;
+
+}
+
+.footer
+{
+	width: 100%;
+	height: 120px;
+	background-color: #3f3f51;
+	color: white;
+	font-size: 20px;
+  line-height: 38px;
+  color: #ffffff;
+  font-family: "Candara";
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+
+.footer_name_block
+{
+	padding-left: 70px;
+	display: flex;
+	flex-direction: column;
+}
+
+.footer_contact_block
+{
+	padding-right: 510px;
+	display: flex;
+	flex-direction: column;
+}
+
+input[type="checkbox"] 
+{
+  display: none;
+}
+
+.mobile_menu_button
+{
+	display: none;
+}
+
+.shop_icon_block
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.popup
+{
+  cursor: pointer;
+  position: fixed;
+  top: 240px;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#pop-up
+{
+  display: none;
+}
+
+.a_list, .a_list_inner
+{
+  position: relative;
+  color: black;
+  text-decoration: none;
+  border-radius: 8px;
+  background: #3f3f51;
+  width: 500px;
+  height: 50px;
+  border: 3px solid white;
+  margin: 5px;
+  font-family: "Candara";
+  text-align: center;
+  color: #f5f5f5;
+  line-height: 52px;
+  cursor: pointer;
+}
+
+.a_list:hover, .a_list_inner:hover
+{
+  color: #FFE77D;
+  cursor: pointer;
+}
+
+
+.first_item_list
+{
+  position: absolute;
+  left: 100%;
+  width: 100%;
+  top: -9999em;
+  border-left: 10px solid transparent;
+}
+
+.first_item_list_test
+{
+  display: none;
+}
+
+.first_item_list, .arrow
+{
+  opacity: 0;
+}
+
+.first_item:hover  .first_item_list
+{
+  opacity: 1;
+  top: 0;*
+}
+
+.first_item:hover  .arrow
+{
+  opacity: 1;
+}
+
+.item_list
+{
+  width: 100%;
+  margin: 50px auto;
+  /* display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 25% 25% 25% 25%;
+  grid-template-columns: 25% 25% 25% 25%;
+  -ms-grid-rows: 420px;
+  grid-template-rows: 420px; */
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .item_list > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+
+.item_list > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+}
+
+.item_list > *:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+
+.item_list > *:nth-child(4) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+} */
+
+.item_block
+{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border: 2px solid gray;
+  border-radius: 10px;
+  padding: 10px;
+  transition: 0.5s;
+  height: 330px;
+  flex-basis: inherit;
+  align-items: center;
+  margin: 50px 25px 50px 0;
+  box-sizing: border-box;
+}
+
+.item_block:hover
+{
+  padding: 13px;
+  box-shadow: 0 0 15px;
+  transition: 0.5s;
+
+}
+
+.item_image
+{
+  margin-bottom: 10px;
+}
+
+.sort_block
+{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+}
+
+input[type=radio] {
+    display:none;
+  }
+
+  input[type=radio] + label {
+    display:inline-block;
+    margin:-2px;
+    padding: 4px 12px;
+    margin-bottom: 0;
+    font-size: 20px;
+    line-height: 20px;
+    color: #333;
+    text-align: center;
+    text-shadow: 0 1px 1px rgba(255,255,255,0.75);
+    vertical-align: middle;
+    cursor: pointer;
+    background-color: #f5f5f5;
+    background-image: -moz-linear-gradient(top,#fff,#e6e6e6);
+    background-image: -webkit-gradient(linear,0 0,0 100%,from(#fff),to(#e6e6e6));
+    background-image: -webkit-linear-gradient(top,#fff,#e6e6e6);
+    background-image: -o-linear-gradient(top,#fff,#e6e6e6);
+    background-image: linear-gradient(to bottom,#fff,#e6e6e6);
+    background-repeat: repeat-x;
+    border: 1px solid #ccc;
+    border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+    border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
+    border-bottom-color: #b3b3b3;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff',endColorstr='#ffe6e6e6',GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+    -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
+    -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
+    width: 200px;
+  }
+
+  input[type=radio]:checked + label {
+       background-image: none;
+    outline: 0;
+    -webkit-box-shadow: inset 0 2px 4px rgba(0,0,0,0.15),0 1px 2px rgba(0,0,0,0.05);
+    -moz-box-shadow: inset 0 2px 4px rgba(0,0,0,0.15),0 1px 2px rgba(0,0,0,0.05);
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.15),0 1px 2px rgba(0,0,0,0.05);
+      background-color:#e0e0e0;
+  }
+@media all and (max-width: 1140px)
+{
+
+  .a_list
+  {
+    width: 400px;
+  }
+
+  .main_header_text
+  {
+  	font-size: 85px;
+  }
+
+  .main_header_description
+  {
+  	font-size: 26px;
+  }
+
+  .header_menu
+  {
+  	font-size: 24px;
+  }
+
+  .snake_image
+  {
+  	width: 100px;
+  	height: 156px;
+  }
+
+  .footer_contact_block
+  {
+  	padding-right: 300px;
+  }
+
+  .footer
+  {
+  	line-height: 30px;
+  }
+
+  .main_block_heading
+  {
+  	font-size: 60px;
+  }
+
+  .header
+  {
+	  height: 90vh;
+  }
+}
+
+@media all and (max-width: 1000px)
+{
+
+  .a_list_inner:hover
+  {
+    width: 500px;
+    height: 50px;
+    font-size: 20px;
+  }
+
+  .a_list, .a_list_inner
+  {
+    width: 350px;
+  }
+
+	.header_menu
+	{
+		padding-top: 80px;
+	}
+  .main_header_text
+  {
+  	font-size: 70px;
+  }
+
+  .main_header_description
+  {
+  	display: none;
+  }
+
+  .header_menu
+  {
+  	font-size: 20px;
+  }
+
+  .snake_image
+  {
+  	width: 77px;
+  	height: 120px;
+  }
+
+  .footer_contact_block
+  {
+  	padding-right: 150px;
+  }
+
+  .main_block_heading
+  {
+  	font-size: 50px;
+  }
+
+  .header
+  {
+	  height: 75vh;
+  }	
+
+  .footer
+  {
+  	font-size: 16px;
+  }
+
+  .header_list:hover:after,
+  .header_list:focus:after 
+  {
+	  width: 50%;
+  }
+
+}
+
+@media all and (max-width: 900px), only screen and (orientation : portrait)
+{
+  .sort_block
+  {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .a_list, .a_list_inner
+  {
+    width: 250px;
+  }
+
+  .main
+  {
+    padding-left: 10px;
+  }
+
+  .main_header_block
+  {
+  	margin-top: 50px;
+  }
+
+	.header_menu_block
+	{
+		background-color: #3f3f51;
+	}
+
+	.header
+	{
+		background: none;
+		height: auto;
+	}
+
+	.header_menu
+	{
+		padding-top: 0;
+	}
+  
+  .header_menu_block
+  {
+  	height: 200px;
+  	align-items: center;
+  	flex-direction: column;
+  }
+
+  .main_header_description
+  {
+  	display: none;
+  }
+
+  .header_list:after
+  {
+  	top: 45px;
+  }
+}
+
+@media all and (max-width: 700px)
+{
+  .header_menu
+  {
+  	display: none;
+    border-top: 5px solid white;
+  }
+
+  .footer_contact_block
+  {
+  	padding-right: 50px;
+  }
+
+  .mobile_menu_button
+  {
+  	display: block;
+  	color: white;
+    font-family: "Calibri";
+    font-weight: 300;
+    font-size: 50px;
+    padding-bottom: 20px;
+  }
+  
+  .mobile_menu_button
+  {
+	  position: relative;
+	  color: #ffffff;
+  }
+
+  .mobile_menu_button:after
+  {
+	  display: block;
+	  position: absolute;
+	  right: -5px; 
+	  top: 55px;
+	  width: 0;
+	  height: 2px; 
+	  background-color: white; 
+	  content: "";
+	  transition: width 0.3s ease-out; 
+  } 
+
+  .mobile_menu_button:hover:after,
+  .mobile_menu_button:focus:after
+  {
+	  width: 110%;
+  }
+  
+  .mobile_menu_button:hover
+  {
+  	cursor: pointer;
+  }
+
+  .snake_image
+  {
+  	padding-left: 0;
+  }
+
+  #checkbox:checked ~ .header_menu
+  {
+    display: block;
+    background-color: #3f3f51;
+    width: 100%;
+    margin: 0;
+  }
+  
+  #checkbox:checked ~ .popup
+  {
+    display: flex;
+  }
+
+  .header_list:after
+  {
+  	top: 30px;
+  	right: 0;
+  }
+  .header_list:hover:after,
+  .header_list:focus:after
+  {
+	  width: 40%;
+  }
+}
+
+@media all and (max-width: 570px)
+{
+  .sort_block
+  {
+    flex-direction: column;
+  }
+
+  .a_list, .a_list_inner
+  {
+    width: 200px;
+  }
+
+	.main_header_text
+	{
+		font-size: 55px;
+	}
+
+	.main_block_heading
+	{
+		font-size: 45px;
+	}
+
+	.footer_name_block, .footer_contact_block
+	{
+		padding: 0;
+	}
+
+	.footer
+	{
+		flex-direction: column;
+	}
+
+	.to_edit
+	{
+		display: none;
+	}
+}
+
+@media all and (max-width: 450px)
+{
+	.main_header_text
+	{
+		font-size: 35px;
+	}
+}
+
+@media all and (max-width: 400px){
+  .main_block_heading{
+    font-size: 42px;
+  }
+  .main_header_text
+	{
+		font-size: 32px;
+	}
+}

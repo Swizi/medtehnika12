@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Медтехника 12</title>
+    <link rel="shortcut icon" href="../../images/favicon.png" type="image/png">
+    <!-- jQuery library (served from Google) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <!-- bxSlider Javascript file -->
+    <script src="../../jquery.bxslider.min.js"></script>
+    <!-- bxSlider CSS file -->
+    <link href="../../style/jquery.bxslider.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../../style/style_shop_items.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <header class="header">
+      <div class="header_menu_block">
+        <div class="shop_icon_block">
+          <img src="../../images/snake.png" alt="snake with cup" class="snake_image">
+          <h2 class="main_header_text">
+            Медицинская техника
+          </h2>
+        </div>
+        <input type="checkbox" id="checkbox" onclick="checkAddress(this)">
+        <label class="mobile_menu_button" for="checkbox">Меню</label>
+        <div class="popup" id="pop-up"></div>
+        <ul class="header_menu ul">
+          <li class="header_list li"><a href="../../index.html" class="a">Главная</a></li>
+          <li class="header_list li"><a href="../../shop.html" class="a">Товары</a></li>
+          <li class="header_list li"><a href="../../contacts.html" class="a">Контакты</a></li>
+        </ul>
+      </div>
+    </header>
+    <main class="main">
+      <h4 class="main_block_heading hidden_text">Манжета для UB-202 AND (запястные)</h4>
+      <ul class="bxslider">
+        <li><img src="../images/manzheta_and_ub_202.png" /></li>
+      </ul>
+      <div class="item_description_block">
+        <h4 class="main_block_heading">Манжета для UB-202 AND (запястные)</h4>
+        <p class="main_block_text"> 
+          
+          Тонометр на запястье AND UB-202 - это точный, надежный и простой в использовании прибор с широким набором пользовательских функций по крайне привлекательной цене, который предназначен для регулярного измерения и контроля уровня артериального давления и частоты пульса.<br><br>
+
+          Отображение результатов измерений производится на большом трехстрочном жидкокристаллическом экране запястного тонометра AND UB-202. В памяти прибора может сохраниться до 90 последних результатов измерений.<br><br>
+
+          Среди пользовательских функций тонометра на запястье AND UB-202 можно отметить графический индикатор уровня артериального давления в соответствии с рекомендациями ВОЗ (Всемирная организация здравоохранения) с цветной шкалой, среднее значение артериального давления на основе результатов всех сохраненных в памяти измерений и индикатор аритмии.<br><br>
+        </p>
+        <div class="price_block">
+          <p class="main_block_price">Цена по запросу</p>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer_name_block">
+        <p>© 2019 ООО Эталон-Мед</p>
+        <p class="to_edit">Торгово-сервисная компания</p>
+      </div>
+      <div class="footer_contact_block">
+        <p>Йошкар-Ола, Якова Эшпая 113 а</p>
+        <p>8(8362)380318</p>
+      </div>
+    </footer>
+    <script src="../../scripts/script.js"></script>
+    <script>
+$(document).ready(function(){
+  $('.bxslider').bxSlider();
+});
+</script>
+  </body>
+</html>

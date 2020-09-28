@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Медтехника 12</title>
+    <link rel="stylesheet" href="../style/style_shop_list.css"/>
+    <link rel="shortcut icon" href="../images/favicon.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <header class="header">
+      <div class="header_menu_block">
+        <div class="shop_icon_block">
+          <img src="../images/snake.png" alt="snake with cup" class="snake_image">
+          <h2 class="main_header_text">
+            Медицинская техника
+          </h2>
+        </div>
+        <input type="checkbox" id="checkbox" onclick="checkAddress(this)">
+        <label class="mobile_menu_button" for="checkbox">Меню</label>
+        <div class="popup" id="pop-up"></div>
+        <ul class="header_menu ul">
+          <li class="header_list li"><a href="../index.html" class="a">Главная</a></li>
+          <li class="header_list li"><a href="../shop.html" class="a">Товары</a></li>
+          <li class="header_list li"><a href="../contacts.html" class="a">Контакты</a></li>
+        </ul>
+      </div>
+    </header>
+    <main class="main">
+      <h4 class="main_block_heading">Ирригаторы и зубные щётки</h4>
+      <form class="sort_block">
+        <input name="sort" type="radio" id="sort-asc"><label for="sort-asc" class="main_block_text" checked>По возрастанию цены</label>
+        <input name="sort" type="radio" id="sort-desc"><label for="sort-desc" class="main_block_text">По убыванию цены</label>
+      </form>
+      <div class="item_list">
+        <div class="item_block" data-price="2600">
+          <a href="items/irrigator_b_well_wi-911.html" class="a_black">
+            <img src="images/Irrigator_polosti_rta_B.Well_WI_911_s_uvelichennoy_emkost_yu.jpg" alt="adapter" width="150" height="87.5" class="item_image">
+            <hr width="150" color="black" size="1">
+            <p class="main_block_text"> 
+              Ирригатор для полости рта WI-911 c зарядным устройством
+              <br><br>
+              Цена по запросу
+            </p>
+          </a>
+        </div>
+        <div class="item_block" data-price="3000">
+          <a href="items/irrigator_cs_medica_cs-32.html" class="a_black">
+            <img src="images/Irrigator_polosti_rta_CS_Medica_Kids_CS_32.jpg" alt="adapter" width="150" height="87.5" class="item_image">
+            <hr width="150" color="black" size="1">
+            <p class="main_block_text"> 
+              Ирригатор полости рта CS Medica KIDS CS-32
+              <br><br>
+              Цена по запросу
+            </p>
+          </a>
+        </div>
+        <div class="item_block" data-price="3000">
+          <a href="items/irrigator_cs_medica_os-1.html" class="a_black">
+            <img src="images/Irrigator_polosti_rta_CS_Medica_AquaPulsar_OS1.jpg" alt="adapter" width="150" height="87.5" class="item_image">
+            <hr width="150" color="black" size="1">
+            <p class="main_block_text"> 
+              Ирригатор полости рта CS Medica OS-1
+              <br><br>
+              Цена по запросу
+            </p>
+          </a>
+        </div>
+        <div class="item_block" data-price="800">
+          <a href="items/toothbrush_cs_medica_cs-161.html" class="a_black">
+            <img src="images/Komplekt_zvukovyh_zubnyh_schetok_CS_Medica_SonicPulsar_CS_161_small.jpg" alt="adapter" width="150" height="87.5" class="item_image">
+            <hr width="150" color="black" size="1">
+            <p class="main_block_text"> 
+              Электрическая зубная щетка CS Medica CS-161
+              <br><br>
+              Цена по запросу
+            </p>
+          </a>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer_name_block">
+        <p>© 2019 ООО Эталон-Мед</p>
+        <p class="to_edit">Торгово-сервисная компания</p>
+      </div>
+      <div class="footer_contact_block">
+        <p>Йошкар-Ола, Якова Эшпая 113 а</p>
+        <p>89005553535</p>
+      </div>
+    </footer>
+    <script src="../scripts/script.js"></script>
+  </body>
+</html>

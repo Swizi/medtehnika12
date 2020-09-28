@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Медтехника 12</title>
+    <link rel="stylesheet" href="../style/style_shop_list.css"/>
+    <link rel="shortcut icon" href="../images/favicon.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <header class="header">
+      <div class="header_menu_block">
+        <div class="shop_icon_block">
+          <img src="../images/snake.png" alt="snake with cup" class="snake_image">
+          <h2 class="main_header_text">
+            Медицинская техника
+          </h2>
+        </div>
+        <input type="checkbox" id="checkbox" onclick="checkAddress(this)">
+        <label class="mobile_menu_button" for="checkbox">Меню</label>
+        <div class="popup" id="pop-up"></div>
+        <ul class="header_menu ul">
+          <li class="header_list li"><a href="../index.html" class="a">Главная</a></li>
+          <li class="header_list li"><a href="../shop.html" class="a">Товары</a></li>
+          <li class="header_list li"><a href="../contacts.html" class="a">Контакты</a></li>
+        </ul>
+      </div>
+    </header>
+    <main class="main">
+      <h4 class="main_block_heading">Ингаляторы и комплектующие</h4>
+      <form class="sort_block">
+        <input name="sort" type="radio" id="sort-asc"><label for="sort-asc" class="main_block_text" checked>По возрастанию цены</label>
+        <input name="sort" type="radio" id="sort-desc"><label for="sort-desc" class="main_block_text">По убыванию цены</label>
+      </form>
+      <div class="item_list">
+        <div class="item_block" data-price="350">
+          <a href="items/air_tube_inhalers.html" class="a_black">
+            <img src="images/air_tube_inhalers.jfif" alt="adapter" width="150" height="87.5" class="item_image">
+            <hr width="150" color="black" size="1">
+            <p class="main_block_text"> 
+              Воздушный шланг к ингалятору AND
+              <br><br>
+              Цена по запросу
+            </p>
+          </a>
+        </div>
+        <div class="item_block" data-price="2450">
+          <a href="items/inhaler_child.html" class="a_black">
+            <img src="images/detskij-ingalyator-nebulayzer-bwell-wn-115k-parovozik.jpg" alt="adapter" width="150" height="87.5" class="item_image">
+            <hr width="150" color="black" size="1">
+            <p class="main_block_text"> 
+              Ингалятор компрессорный PRO-115 "Паровозик"
+              <br><br>
+              Цена по запросу
+            </p>
+          </a>
+        </div>
+        <div class="item_block" data-price="350">
+          <a href="items/inhaler_health_smells.html" class="a_black">
+            <img src="images/inhalers_health_air.jfif" alt="adapter" width="150" height="87.5" class="item_image">
+            <hr width="150" color="black" size="1">
+            <p class="main_block_text"> 
+              Ингалятор Запахи здоровья
+              <br><br>
+              Цена по запросу
+            </p>
+          </a>
+        </div>
+        <div class="item_block" data-price="3700">
+          <a href="items/inhaler_omron_ne-c24.html" class="a_black">
+            <img src="images/omron_inhaler_compress.jfif" alt="adapter" width="150" height="87.5" class="item_image">
+            <hr width="150" color="black" size="1">
+            <p class="main_block_text"> 
+              Ингалятор компрессионный OMRON NE-C24
+              <br><br>
+              Цена по запросу
+            </p>
+          </a>
+        </div>
+        <div class="item_block" data-price="4700">
+          <a href="items/inhaler_omron_ne-c300.html" class="a_black">
+            <img src="images/Kompressornyy_nebulayzer_Omron_CompAir_NE_C300_Complete.jfif" alt="adapter" width="150" height="87.5" class="item_image">
+            <hr width="150" color="black" size="1">
+            <p class="main_block_text"> 
+              Ингалятор компрессионный OMRON NE-C300
+              <br><br>
+              Цена по запросу
+            </p>
+          </a>
+        </div>
+        <div class="item_block" data-price="560">
+          <a href="items/inhaler_magolda.html" class="a_black">
+            <img src="images/Ingalyator-steklyannyi-tipa-Maholda6-e1533026025617.jpg" alt="adapter" width="150" height="87.5" class="item_image">
+            <hr width="150" color="black" size="1">
+            <p class="main_block_text"> 
+              Ингалятор Махольда (стекло)
+              <br><br>
+              Цена по запросу
+            </p>
+          </a>
+        </div>
+        <div class="item_block" data-price="2200">
+          <a href="items/inhaler_b_well_pro-110.html" class="a_black">
+            <img src="images/Kompressornyy_ingalyator_B_Well_PRO_110_katalog.jpg" alt="adapter" width="150" height="87.5" class="item_image">
+            <hr width="150" color="black" size="1">
+            <p class="main_block_text"> 
+              Ингалятор медицинский PRO-110 B.WELL
+              <br><br>
+              Цена по запросу
+            </p>
+          </a>
+        </div>
+        <div class="item_block" data-price="1200">
+          <a href="items/inhaler_chamomile-2.html" class="a_black">
+            <img src="images/ingalyator-romashka-2-bez-ustrojstvo-kosmeticheskoe.jpg" alt="adapter" width="150" height="87.5" class="item_image">
+            <hr width="150" color="black" size="1">
+            <p class="main_block_text"> 
+              Ингалятор Ромашка-2
+              <br><br>
+              Цена по запросу
+            </p>
+          </a>
+        </div>
+        <div class="item_block" data-price="350">
+          <a href="items/inhaler_mask_and_adult.html" class="a_black">
+            <img src="images/Maska_vzroslaya_dlya_ingalyatorov_Omron_small.jpg" alt="adapter" width="150" height="87.5" class="item_image">
+            <hr width="150" color="black" size="1">
+            <p class="main_block_text"> 
+              Маска взрослая для ингаляторов AND
+              <br><br>
+              Цена по запросу
+            </p>
+          </a>
+        </div>
+        <div class="item_block" data-price="350">
+          <a href="items/inhaler_mask_and_child.html" class="a_black">
+            <img src="images/Maska_detskaya_dlya_ingalyatorov_Omron_small.jpg" alt="adapter" width="150" height="87.5" class="item_image">
+            <hr width="150" color="black" size="1">
+            <p class="main_block_text"> 
+              Маска детская для ингаляторов AND
+              <br><br>
+              Цена по запросу
+            </p>
+          </a>
+        </div>
+        <div class="item_block" data-price="550">
+          <a href="items/inhaler_spray.html" class="a_black">
+            <img src="images/Emkost_dlya_lekarstva_dlya_ingalyatorov_AND_CN_231_CN_232.jpg" alt="adapter" width="150" height="87.5" class="item_image">
+            <hr width="150" color="black" size="1">
+            <p class="main_block_text"> 
+              Распылитель к ингалятору
+              <br><br>
+              Цена по запросу
+            </p>
+          </a>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer_name_block">
+        <p>© 2019 ООО Эталон-Мед</p>
+        <p class="to_edit">Торгово-сервисная компания</p>
+      </div>
+      <div class="footer_contact_block">
+        <p>Йошкар-Ола, Якова Эшпая 113 а</p>
+        <p>8(8362)380318</p>
+      </div>
+    </footer>
+    <script src="../scripts/script.js"></script>
+  </body>
+</html>

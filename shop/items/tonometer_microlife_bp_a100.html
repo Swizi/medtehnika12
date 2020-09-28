@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Медтехника 12</title>
+    <link rel="shortcut icon" href="../../images/favicon.png" type="image/png">
+    <!-- jQuery library (served from Google) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <!-- bxSlider Javascript file -->
+    <script src="../../jquery.bxslider.min.js"></script>
+    <!-- bxSlider CSS file -->
+    <link href="../../style/jquery.bxslider.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../../style/style_shop_items.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <header class="header">
+      <div class="header_menu_block">
+        <div class="shop_icon_block">
+          <img src="../../images/snake.png" alt="snake with cup" class="snake_image">
+          <h2 class="main_header_text">
+            Медицинская техника
+          </h2>
+        </div>
+        <input type="checkbox" id="checkbox" onclick="checkAddress(this)">
+        <label class="mobile_menu_button" for="checkbox">Меню</label>
+        <div class="popup" id="pop-up"></div>
+        <ul class="header_menu ul">
+          <li class="header_list li"><a href="../../index.html" class="a">Главная</a></li>
+          <li class="header_list li"><a href="../../shop.html" class="a">Товары</a></li>
+          <li class="header_list li"><a href="../../contacts.html" class="a">Контакты</a></li>
+        </ul>
+      </div>
+    </header>
+    <main class="main">
+      <h4 class="main_block_heading hidden_text">Измеритель артериального давления BP A100 c адаптером</h4>
+      <ul class="bxslider">
+        <li><img src="../images/avtomaticheskiy_tonometr_microlife_bp_a100_plus_small.jpg" /></li>
+        <li><img src="../images/avtomaticheskiy_tonometr_microlife_bp_a100_plus_small_2.jpg" /></li>
+      </ul>
+      <div class="item_description_block">
+        <h4 class="main_block_heading">Измеритель артериального давления BP A100 c адаптером</h4>
+        <p class="main_block_text"> 
+          
+          Измеритель артериального давления (или тонометр) Microlife BP A-100 - это точный и надежный медицинский прибор, с фиксацией манжеты на плече, который предназначен для регулярного измерения и контроля уровня артериального давления и частоты пульса в домашних условиях. <br><br>
+
+          Автоматический тонометр Microlife BP A-100 обладает великолепной точностью, подтвержденной клиническими испытаниями. Прибор прошел испытания по протоколам Европейского Гипертонического Общества (ESH) и Британского Общества Гипертонии (BHS). Точность измерителя артериального давления и частоты пульса Microlife BP A-100 соответствует наивысшей оценке А/А. <br><br>
+
+          Прибор оснащен PAD-технологией диагностики аритмии, которая распознает самые первые симптомы этого заболевания, отличает действительные признаки аритмии от схожих симптомов, вызванных, например, движениями руки во время измерения. Большой трехстрочный дисплей, крупные кнопки с подсветкой, а также наличие отделения под манжету и информационная зона - основные "плюсы" эргономичного дизайна тонометра Microlife BP A-100.<br><br>
+
+          В комплект поставки также входят универсальная манжета, Microlife M-L, размером 22 - 42 см и сетевой адаптер Microlife AD-1024C.<br><br>
+
+          Тонометр Microlife BP A100 является один из самых востребованных на российском рынке. Сочетая точность, надежность и технологичность, тонометр Microlife BP A-100 остается простым в управлении, комфортным в использовании и доступным по цене.<br><br>
+        </p>
+        <div class="price_block">
+          <p class="main_block_price">Цена по запросу</p>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer_name_block">
+        <p>© 2019 ООО Эталон-Мед</p>
+        <p class="to_edit">Торгово-сервисная компания</p>
+      </div>
+      <div class="footer_contact_block">
+        <p>Йошкар-Ола, Якова Эшпая 113 а</p>
+        <p>8(8362)380318</p>
+      </div>
+    </footer>
+    <script src="../../scripts/script.js"></script>
+    <script>
+$(document).ready(function(){
+  $('.bxslider').bxSlider();
+});
+</script>
+  </body>
+</html>

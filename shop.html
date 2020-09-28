@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Медтехника 12</title>
+    <link rel="stylesheet" href="style/style2.css"/>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <header class="header">
+      <div class="header_menu_block">
+        <div class="shop_icon_block">
+          <img src="images/snake.png" alt="snake with cup" class="snake_image">
+          <h2 class="main_header_text">
+            Медицинская техника
+          </h2>
+        </div>
+        <input type="checkbox" id="checkbox" onclick="checkAddress(this)">
+        <label class="mobile_menu_button" for="checkbox">Меню</label>
+        <div class="popup" id="pop-up"></div>
+        <ul class="header_menu">
+          <li class="header_list"><a href="index.html" class="a">Главная</a></li>
+          <li class="header_list"><a href="shop.html" class="a">Товары</a></li>
+          <li class="header_list"><a href="contacts.html" class="a">Контакты</a></li>
+        </ul>
+      </div>
+    </header>
+    <main class="main">
+      <h4 class="main_block_heading"> Товары </h4>
+      <p class="main_block_text"> 
+        <ol class="main_block_text ol pc_version">
+          <li class="a_list first_item">Домашняя медтехника
+            <ol class="first_item_list ol">
+              <li class="a_list_inner"><a href="shop/tonometri.html" class="a_menu">Тонометры и комплектующие</a></li>
+              <li class="a_list_inner"><a href="shop/steto-fonendo_skopi.html" class="a_menu">Стетоскопы и фонендоскопы</a></li>
+              <li class="a_list_inner"><a href="shop/termometri.html" class="a_menu">Термометры</a></li>
+              <li class="a_list_inner"><a href="shop/inhalers.html" class="a_menu">Ингаляторы и комплектующие</a></li>
+              <li class="a_list_inner"><a href="shop/irradiators.html" class="a_menu">Облучатели</a></li>
+              <li class="a_list_inner"><a href="shop/breath_simulators.html" class="a_menu">Дых. тренажёры и аспираторы</a></li>
+              <li class="a_list_inner"><a href="shop/magnetic_laser.html" class="a_menu">Магнитная и лазерная терапия</a></li>
+              <li class="a_list_inner"><a href="shop/irrigators_toothbrush.html" class="a_menu">Ирригаторы и зубные щётки</a></li>
+              <li class="a_list_inner"><a href="shop/oxygen.html" class="a_menu">Кислородное оборудование</a></li>
+              <li class="a_list_inner"><a href="shop/aspirators.html" class="a_menu">Отсасыватели</a></li>
+            </ol>
+          </li>
+          <li class="a_list first_item">Медицинские инструменты
+          	<ol class="first_item_list ol">
+              <li class="a_list_inner"><a href="shop/mirrors.html" class="a_menu">Зеркала</a></li>
+              <li class="a_list_inner"><a href="shop/filters.html" class="a_menu">Фильтры</a></li>
+              <li class="a_list_inner"><a href="shop/calipers.html" class="a_menu">Кронциркули</a></li>
+              <li class="a_list_inner"><a href="shop/trays.html" class="a_menu">Лотки</a></li>
+              <li class="a_list_inner"><a href="shop/hammer.html" class="a_menu">Молоток</a></li>
+              <li class="a_list_inner"><a href="shop/scissors.html" class="a_menu">Ножницы</a></li>
+              <li class="a_list_inner"><a href="shop/tweezers.html" class="a_menu">Пинцеты</a></li>
+              <li class="a_list_inner"><a href="shop/scalpels.html" class="a_menu">Скальпели</a></li>
+              <li class="a_list_inner"><a href="shop/syringes.html" class="a_menu">Шприцы</a></li>
+              <li class="a_list_inner"><a href="shop/probes.html" class="a_menu">Зонды</a></li>
+          	</ol>
+          </li>
+          <li class="a_list first_item">Средства реабилитации
+            <ol class="first_item_list ol">
+              <li class="a_list_inner"><a href="shop/crutches.html" class="a_menu">Костыли</a></li>
+              <li class="a_list_inner"><a href="shop/canes.html" class="a_menu">Трости</a></li>
+              <li class="a_list_inner"><a href="shop/supports-walkers.html" class="a_menu">Опоры-ходунки, роляторы</a></li>
+              <li class="a_list_inner"><a href="shop/mattress.html" class="a_menu">Матрасы</a></li>
+              <li class="a_list_inner"><a href="shop/tripods_droppers.html" class="a_menu">Штативы, капельницы</a></li>
+              <li class="a_list_inner"><a href="shop/rumor.html" class="a_menu">Слуховые аппараты</a></li>
+            </ol>
+          </li>
+          <li class="a_list first_item">Санитарные приспособления
+            <ol class="first_item_list ol">
+              <li class="a_list_inner"><a href="shop/toilet_chairs.html" class="a_menu">Кресла-туалеты</a></li>
+              <li class="a_list_inner"><a href="shop/urinal.html" class="a_menu">Судна и мочеприёмники</a></li>
+              <li class="a_list_inner"><a href="shop/hygiene.html" class="a_menu">Для мытья и гигиены</a></li>
+            </ol>
+          </li>
+          <li class="a_list first_item">Ортопедические изделия
+            <ol class="first_item_list ol">
+              <li class="a_list_inner"><a href="shop/bandage.html" class="a_menu">Бандажи</a></li>
+              <li class="a_list_inner"><a href="shop/insoles.html" class="a_menu">Стельки</a></li>
+            </ol>
+          </li>
+          <li class="a_list first_item">Товары для гигиены
+            <ol class="first_item_list ol">
+              <li class="a_list_inner"><a href="shop/hospital.html" class="a_menu">Товары для посещения больниц</a></li>
+            </ol>
+          </li>
+          <li class="a_list first_item">Красота и здоровье
+            <ol class="first_item_list ol">
+              <li class="a_list_inner"><a href="shop/scales.html" class="a_menu">Весы</a></li>
+              <li class="a_list_inner"><a href="shop/heating_pad.html" class="a_menu">Электрогрелки</a></li>
+              <li class="a_list_inner"><a href="shop/massagers.html" class="a_menu">Массажёры и массажные накидки</a></li>
+              <li class="a_list_inner"><a href="shop/salt_warmer.html" class="a_menu">Солевые грелки</a></li>
+              <li class="a_list_inner"><a href="shop/salt_lamp.html" class="a_menu">Соляные лампы</a></li>
+              <li class="a_list_inner"><a href="shop/winter.html" class="a_menu">Зимоходы</a></li>
+            </ol>
+          </li>
+          <li class="a_list first_item">Весы и анализ. состава тела
+            <ol class="first_item_list ol">
+              <li class="a_list_inner"><a href="shop/scales_heightmeter.html" class="a_menu">Медицинские весы и ростомеры</a></li>
+            </ol>
+          </li>
+          <li class="a_list first_item">Алкотестеры
+            <ol class="first_item_list ol">
+              <li class="a_list_inner"><a href="shop/breathalyzer.html" class="a_menu">Алкотестеры и комплектующие</a></li>
+            </ol>
+          </li>
+        </ol>
+        <div class="mobile_version">
+          <input type="checkbox" id="checkbox1">
+          <label class="mobile_list_button" for="checkbox1">Домашняя медтехника</label>
+          <ul class="home_medtechnics">
+            <li class="header_list_items"><a href="shop/tonometri.html" class="a_menu">Тонометры и комплектующие</a></li>
+            <li class="header_list_items"><a href="shop/steto-fonendo_skopi.html" class="a_menu">Стетоскопы и фонендоскопы</a></li>
+            <li class="header_list_items"><a href="shop/termometri.html" class="a_menu">Термометры</a></li>
+            <li class="header_list_items"><a href="shop/inhalers.html" class="a_menu">Ингаляторы и комплектующие</a></li>
+            <li class="header_list_items"><a href="shop/irradiators.html" class="a_menu">Облучатели</a></li>
+            <li class="header_list_items"><a href="shop/breath_simulators.html" class="a_menu">Дых. тренажёры и аспираторы</a></li>
+            <li class="header_list_items"><a href="shop/magnetic_laser.html" class="a_menu">Магнитная и лазерная терапия</a></li>
+            <li class="header_list_items"><a href="shop/irrigators_toothbrush.html" class="a_menu">Ирригаторы и зубные щётки</a></li>
+            <li class="header_list_items"><a href="shop/oxygen.html" class="a_menu">Кислородное оборудование</a></li>
+          </ul>
+        </div>
+      </p>
+    </main>
+    <footer class="footer">
+      <div class="footer_name_block">
+        <p>© 2019 ООО Эталон-Мед</p>
+        <p class="to_edit">Торгово-сервисная компания</p>
+      </div>
+      <div class="footer_contact_block">
+        <p>Йошкар-Ола, Якова Эшпая 113 а</p>
+        <p>8(8362)380318</p>
+      </div>
+    </footer>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Медтехника 12</title>
+    <link rel="shortcut icon" href="../../images/favicon.png" type="image/png">
+    <!-- jQuery library (served from Google) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <!-- bxSlider Javascript file -->
+    <script src="../../jquery.bxslider.min.js"></script>
+    <!-- bxSlider CSS file -->
+    <link href="../../style/jquery.bxslider.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../../style/style_shop_items.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <header class="header">
+      <div class="header_menu_block">
+        <div class="shop_icon_block">
+          <img src="../../images/snake.png" alt="snake with cup" class="snake_image">
+          <h2 class="main_header_text">
+            Медицинская техника
+          </h2>
+        </div>
+        <input type="checkbox" id="checkbox" onclick="checkAddress(this)">
+        <label class="mobile_menu_button" for="checkbox">Меню</label>
+        <div class="popup" id="pop-up"></div>
+        <ul class="header_menu ul">
+          <li class="header_list li"><a href="../../index.html" class="a">Главная</a></li>
+          <li class="header_list li"><a href="../../shop.html" class="a">Товары</a></li>
+          <li class="header_list li"><a href="../../contacts.html" class="a">Контакты</a></li>
+        </ul>
+      </div>
+    </header>
+    <main class="main">
+      <h4 class="main_block_heading hidden_text">Термометр лобный инфракрасный WF-2000 для детей</h4>
+      <ul class="bxslider">
+        <li><img src="../images/Infrared_termometr_B.Well_WF_2000_2.jpg" /></li> 
+        <li><img src="../images/Infrared_termometr_B.Well_WF_2000.jpg" /></li>        
+      </ul>
+      <div class="item_description_block">
+        <h4 class="main_block_heading">Термометр лобный инфракрасный WF-2000 для детей</h4>
+        <p class="main_block_text"> 
+          Лобный инфракрасный термометр B.Well WF-2000 абсолютно точно и безболезненно определяет температуру тела. Прибор идеально подходит для измерения температуры тела у детей, даже когда они спят.<br><br>
+
+          Новая технология измерения температуры в лобной зоне с помощью инфракрасного датчика обеспечивает более высокую надежность и, к тому же, увеличивает срок службы прибора. Термометр B.Well WF-2000 имеет большой жидкокристаллический дисплей, позволяющий легко считывать показатели температуры.<br><br>
+
+          Звуковой сигнал подается после завершения измерения температуры и после автоматического выключения прибора, если он не используется в течение 1 минуты, что позволяет продлить срок службы батареек. Прибор прост в использовании и позволяет также измерять температуру воздуха, предметов и жидкости.<br><br>
+
+          Температура измеряется в градусах Цельсия (C°) и Фаренгейта (F°). Прибор хранит в памяти последние 25 измерений температуры для отслеживания динамики изменения состояния.<br><br>
+        </p>
+        <div class="price_block">
+          <p class="main_block_price">Цена по запросу</p>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer_name_block">
+        <p>© 2019 ООО Эталон-Мед</p>
+        <p class="to_edit">Торгово-сервисная компания</p>
+      </div>
+      <div class="footer_contact_block">
+        <p>Йошкар-Ола, Якова Эшпая 113 а</p>
+        <p>8(8362)380318</p>
+      </div>
+    </footer>
+    <script src="../../scripts/script.js"></script>
+    <script>
+$(document).ready(function(){
+  $('.bxslider').bxSlider();
+});
+</script>
+  </body>
+</html>

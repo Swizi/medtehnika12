@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Медтехника 12</title>
+    <link rel="shortcut icon" href="../../images/favicon.png" type="image/png">
+    <!-- jQuery library (served from Google) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <!-- bxSlider Javascript file -->
+    <script src="../../jquery.bxslider.min.js"></script>
+    <!-- bxSlider CSS file -->
+    <link href="../../style/jquery.bxslider.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../../style/style_shop_items.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <header class="header">
+      <div class="header_menu_block">
+        <div class="shop_icon_block">
+          <img src="../../images/snake.png" alt="snake with cup" class="snake_image">
+          <h2 class="main_header_text">
+            Медицинская техника
+          </h2>
+        </div>
+        <input type="checkbox" id="checkbox" onclick="checkAddress(this)">
+        <label class="mobile_menu_button" for="checkbox">Меню</label>
+        <div class="popup" id="pop-up"></div>
+        <ul class="header_menu ul">
+          <li class="header_list li"><a href="../../index.html" class="a">Главная</a></li>
+          <li class="header_list li"><a href="../../shop.html" class="a">Товары</a></li>
+          <li class="header_list li"><a href="../../contacts.html" class="a">Контакты</a></li>
+        </ul>
+      </div>
+    </header>
+    <main class="main">
+      <h4 class="main_block_heading hidden_text">Электрическая зубная щетка CS Medica CS-161</h4>
+      <ul class="bxslider">
+        <li><img src="../images/toothbrush_cs_medica_cs-161.jpg" /></li>
+        <li><img src="../images/Komplekt_zvukovyh_zubnyh_schetok_CS_Medica_SonicPulsar_CS_161_small.jpg" /></li>
+      </ul>
+      <div class="item_description_block">
+        <h4 class="main_block_heading">Электрическая зубная щетка CS Medica CS-161</h4>
+        <p class="main_block_text"> 
+          
+         Звуковая электрическая зубная щетка CS Medica CS-161 голубого цвета - это стандартное устройство для каждодневных процедур чистки зубов.<br><br>
+
+         Звуковая электрическая зубная щетка CS Medica CS-161 имеет очень малый вес, всего двадцать три грамма без батарейки, и компактные габариты корпуса - 197 X 18 (диаметр) миллиметров.<br><br>
+
+         Подобный прибор уместно брать с собой в командировки и путешествия, что связано не только с ее размерами, но и благодаря наличию специального защитного колпачка, изготовленного из прозрачного пластика, который закрывает щетину от попадания мусора и грязи.<br><br>
+        </p>
+        <div class="price_block">
+          <p class="main_block_price">Цена по запросу</p>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer_name_block">
+        <p>© 2019 ООО Эталон-Мед</p>
+        <p class="to_edit">Торгово-сервисная компания</p>
+      </div>
+      <div class="footer_contact_block">
+        <p>Йошкар-Ола, Якова Эшпая 113 а</p>
+        <p>8(8362)380318</p>
+      </div>
+    </footer>
+    <script src="../../scripts/script.js"></script>
+    <script>
+$(document).ready(function(){
+  $('.bxslider').bxSlider();
+});
+</script>
+  </body>
+</html>
